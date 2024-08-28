@@ -1,0 +1,152 @@
+[gd_scene load_steps=14 format=3 uid="uid://dnjdpmwrd7b36"]
+
+[ext_resource type="Script" path="res://ui/game_ui.gd" id="1_8k7xs"]
+[ext_resource type="Texture2D" uid="uid://cl3ysk3cedjt2" path="res://Tiny Swords (Update 010)/UI/Banners/Banner_Horizontal.png" id="1_wyvdk"]
+[ext_resource type="Texture2D" uid="uid://7gly4vfsfve" path="res://Tiny Swords (Update 010)/Resources/Resources/M_Idle_(NoShadow).png" id="3_3tm7n"]
+[ext_resource type="Texture2D" uid="uid://bo0vi75yi0fb5" path="res://Tiny Swords (Update 010)/Resources/Resources/G_Idle_(NoShadow).png" id="4_av2n0"]
+
+[sub_resource type="SystemFont" id="SystemFont_eefiy"]
+font_names = PackedStringArray("Britannic")
+font_italic = true
+font_weight = 999
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_7yc5c"]
+font = SubResource("SystemFont_eefiy")
+font_size = 24
+outline_size = 6
+outline_color = Color(0.06, 0.06, 0.06, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8ytw6"]
+texture = ExtResource("1_wyvdk")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 48.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(32, 48, 128, 128)
+
+[sub_resource type="SystemFont" id="SystemFont_u1ba2"]
+font_names = PackedStringArray("Britannic")
+font_weight = 999
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_2mwve"]
+font = SubResource("SystemFont_u1ba2")
+font_size = 32
+font_color = Color(0.0444646, 0.0612651, 0.0119883, 1)
+outline_size = 4
+outline_color = Color(1, 0.72, 0.72, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_3jdpk"]
+font_names = PackedStringArray("Britannic")
+font_weight = 650
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_udy6u"]
+font = SubResource("SystemFont_3jdpk")
+font_size = 32
+font_color = Color(0.00979379, 0.0332367, 0.0356513, 1)
+outline_size = 4
+outline_color = Color(1, 0.943167, 0.69, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kiken"]
+atlas = ExtResource("3_3tm7n")
+region = Rect2(40, 56, 56, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7uim"]
+atlas = ExtResource("4_av2n0")
+region = Rect2(48, 48, 48, 48)
+
+[node name="GameUI" type="CanvasLayer"]
+script = ExtResource("1_8k7xs")
+
+[node name="Timer Label" type="Label" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_top = 7.0
+offset_right = -51.0
+offset_bottom = 46.0
+grow_horizontal = 2
+scale = Vector2(3.0049, 2.22233)
+text = "08:50
+"
+label_settings = SubResource("LabelSettings_7yc5c")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel3" type="Panel" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -381.0
+offset_top = 20.0
+offset_right = -52.0
+offset_bottom = 270.0
+grow_horizontal = 0
+scale = Vector2(1.13476, 0.399201)
+theme_override_styles/panel = SubResource("StyleBoxTexture_8ytw6")
+
+[node name="Meat Label" type="Label" parent="Panel3"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -138.063
+offset_top = -47.3449
+offset_right = -78.0627
+offset_bottom = -5.34489
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.864412, 1.86844)
+text = "50 
+"
+label_settings = SubResource("LabelSettings_2mwve")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Gold Label" type="Label" parent="Panel3"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 6.46126
+offset_top = -44.8399
+offset_right = 125.461
+offset_bottom = -8.8399
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.657143, 2.2687)
+text = "20.000 "
+label_settings = SubResource("LabelSettings_udy6u")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel3"]
+layout_mode = 0
+offset_left = 77.5494
+offset_top = 95.1901
+offset_right = 133.549
+offset_bottom = 195.19
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_kiken")
+
+[node name="TextureRect2" type="TextureRect" parent="Panel3"]
+layout_mode = 0
+offset_left = 250.273
+offset_top = 85.1701
+offset_right = 302.273
+offset_bottom = 210.17
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_b7uim")

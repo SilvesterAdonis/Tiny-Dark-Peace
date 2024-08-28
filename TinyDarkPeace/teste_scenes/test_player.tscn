@@ -1,0 +1,135 @@
+[gd_scene load_steps=8 format=3 uid="uid://dsbg1og7pha3b"]
+
+[ext_resource type="Texture2D" uid="uid://bbwapsgvd5f1v" path="res://Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Purple/Warrior_Purple.png" id="1_aglry"]
+[ext_resource type="PackedScene" uid="uid://bvhknp1kh0v71" path="res://player/player.tscn" id="2_vcmgn"]
+[ext_resource type="PackedScene" uid="uid://cbg8s8stsofim" path="res://enemies/pawn.tscn" id="3_p7cdm"]
+[ext_resource type="PackedScene" uid="uid://bg1r6ygvu3sdl" path="res://enemies/goblin.tscn" id="4_wlaou"]
+[ext_resource type="PackedScene" uid="uid://dkr5l3looxhhv" path="res://enemies/sheep.tscn" id="5_786j2"]
+[ext_resource type="PackedScene" uid="uid://cc1p5dkcmkcsd" path="res://misc/meat.tscn" id="6_3sfjs"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_oj4qs"]
+line_spacing = 45.0
+
+[node name="TestPlayer" type="Node2D"]
+
+[node name="WarriorPurple - Right" type="Sprite2D" parent="."]
+position = Vector2(3823, 446)
+scale = Vector2(0.715278, 0.64388)
+texture = ExtResource("1_aglry")
+
+[node name="Label" type="Label" parent="WarriorPurple - Right"]
+offset_left = -705.0
+offset_top = -711.0
+offset_right = -665.0
+offset_bottom = -688.0
+scale = Vector2(3.95038, 2.85411)
+text = "Idle
+"
+
+[node name="Label2" type="Label" parent="WarriorPurple - Right"]
+offset_left = -705.0
+offset_top = -519.0
+offset_right = -665.0
+offset_bottom = -496.0
+scale = Vector2(3.95038, 2.85411)
+text = "Run
+"
+
+[node name="Label3" type="Label" parent="WarriorPurple - Right"]
+offset_left = -947.0
+offset_top = -327.0
+offset_right = -845.0
+offset_bottom = -304.0
+scale = Vector2(3.95038, 2.85411)
+text = "Attack_side 1
+"
+
+[node name="Label4" type="Label" parent="WarriorPurple - Right"]
+offset_left = -945.0
+offset_top = -134.0
+offset_right = -843.0
+offset_bottom = -111.0
+scale = Vector2(3.95038, 2.85411)
+text = "Attack_side 2
+"
+
+[node name="Label5" type="Label" parent="WarriorPurple - Right"]
+offset_left = -994.0
+offset_top = 63.0
+offset_right = -881.0
+offset_bottom = 86.0
+scale = Vector2(3.95038, 2.85411)
+text = "Attack_down 1
+"
+
+[node name="Label6" type="Label" parent="WarriorPurple - Right"]
+offset_left = -1015.0
+offset_top = 244.0
+offset_right = -902.0
+offset_bottom = 267.0
+scale = Vector2(3.95038, 2.85411)
+text = "Attack_down 2
+"
+
+[node name="Label7" type="Label" parent="WarriorPurple - Right"]
+offset_left = -1017.0
+offset_top = 450.0
+offset_right = -904.0
+offset_bottom = 473.0
+scale = Vector2(3.95038, 2.85411)
+text = "Attack_up 1
+"
+
+[node name="Label8" type="Label" parent="WarriorPurple - Right"]
+offset_left = -1028.0
+offset_top = 643.0
+offset_right = -915.0
+offset_bottom = 666.0
+scale = Vector2(3.95038, 2.85411)
+text = "Attack_up 2
+"
+
+[node name="Label9" type="Label" parent="WarriorPurple - Right"]
+offset_left = -524.0
+offset_top = -855.0
+offset_right = -411.0
+offset_bottom = -832.0
+scale = Vector2(3.95038, 2.85411)
+text = " 0           1          2          3         4          5  
+"
+
+[node name="Label10" type="Label" parent="WarriorPurple - Right"]
+offset_left = 577.0
+offset_top = -727.0
+offset_right = 599.0
+offset_bottom = -224.0
+scale = Vector2(3.95038, 2.85411)
+text = "0           1          2          3         4          5   6  7
+"
+label_settings = SubResource("LabelSettings_oj4qs")
+autowrap_mode = 2
+
+[node name="WarriorPurple - Left" type="Sprite2D" parent="."]
+position = Vector2(4933, 316)
+scale = Vector2(0.851563, 0.558594)
+texture = ExtResource("1_aglry")
+flip_h = true
+
+[node name="Player" parent="." instance=ExtResource("2_vcmgn")]
+position = Vector2(395, 425)
+scale = Vector2(0.610254, 0.678305)
+
+[node name="Pawn" parent="." instance=ExtResource("3_p7cdm")]
+position = Vector2(978, 597)
+
+[node name="Goblin" parent="." instance=ExtResource("4_wlaou")]
+position = Vector2(978, 143)
+
+[node name="Sheep" parent="." instance=ExtResource("5_786j2")]
+position = Vector2(766, 543)
+
+[node name="Sheep2" parent="." instance=ExtResource("5_786j2")]
+position = Vector2(808, 391)
+
+[node name="Meat" parent="." instance=ExtResource("6_3sfjs")]
+position = Vector2(468, 572)

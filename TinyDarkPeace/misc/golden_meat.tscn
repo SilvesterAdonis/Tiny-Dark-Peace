@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://pltwhse08cxb"]
+
+[ext_resource type="PackedScene" uid="uid://cc1p5dkcmkcsd" path="res://misc/meat.tscn" id="1_p821o"]
+
+[node name="Meat" instance=ExtResource("1_p821o")]
+self_modulate = Color(16.216, 2.163, 0, 1)
+regenerate_amount = 100
+
+[node name="Area2D" parent="." index="0"]
+visible = false

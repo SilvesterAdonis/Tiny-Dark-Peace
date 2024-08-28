@@ -1,0 +1,59 @@
+[gd_scene load_steps=12 format=3 uid="uid://bdpr8nml3eijs"]
+
+[ext_resource type="Texture2D" uid="uid://cdu8refrkp7dc" path="res://Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_weslb"]
+[ext_resource type="Texture2D" uid="uid://x6fd3nxcstkk" path="res://Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Red/Warrior_Red.png" id="2_csrfu"]
+[ext_resource type="Texture2D" uid="uid://bbwapsgvd5f1v" path="res://Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Purple/Warrior_Purple.png" id="3_rybof"]
+[ext_resource type="Texture2D" uid="uid://duc3frl5myoqi" path="res://Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Yellow/Warrior_Yellow.png" id="4_k67i6"]
+[ext_resource type="Texture2D" uid="uid://cl3ysk3cedjt2" path="res://Tiny Swords (Update 010)/UI/Banners/Banner_Horizontal.png" id="5_g3uql"]
+[ext_resource type="Texture2D" uid="uid://xpg7jsiiju7l" path="res://Tiny Swords (Update 010)/UI/Banners/Banner_Vertical.png" id="6_3x3es"]
+[ext_resource type="Texture2D" uid="uid://b4mcwx3ef8ym" path="res://Tiny Swords (Update 010)/UI/Banners/Carved_9Slides.png" id="7_smn70"]
+[ext_resource type="Texture2D" uid="uid://c5tpdq6to3r66" path="res://Tiny Swords (Update 010)/UI/Banners/Carved_Regular.png" id="8_jhkkj"]
+[ext_resource type="Texture2D" uid="uid://k8byxpc8cq2p" path="res://Tiny Swords (Update 010)/UI/Banners/Carved_3Slides.png" id="9_gs85w"]
+[ext_resource type="Texture2D" uid="uid://d3ncboka66kif" path="res://Tiny Swords (Update 010)/UI/Banners/Banner_Connection_Up.png" id="10_u2mf0"]
+[ext_resource type="Texture2D" uid="uid://b284cbd0b2hmf" path="res://Tiny Swords (Update 010)/UI/Banners/Banner_Connection_Right.png" id="11_xm2u7"]
+
+[node name="World" type="Node2D"]
+
+[node name="WarriorBlue" type="Sprite2D" parent="."]
+position = Vector2(-1103, 466)
+texture = ExtResource("1_weslb")
+
+[node name="WarriorRed" type="Sprite2D" parent="."]
+position = Vector2(551, 467)
+texture = ExtResource("2_csrfu")
+
+[node name="WarriorPurple" type="Sprite2D" parent="."]
+position = Vector2(1864, 490)
+texture = ExtResource("3_rybof")
+
+[node name="WarriorYellow" type="Sprite2D" parent="."]
+position = Vector2(-2402, 614)
+texture = ExtResource("4_k67i6")
+
+[node name="BannerHorizontal" type="Sprite2D" parent="."]
+position = Vector2(3905, 666)
+texture = ExtResource("5_g3uql")
+
+[node name="BannerVertical" type="Sprite2D" parent="."]
+position = Vector2(3698, 679)
+texture = ExtResource("6_3x3es")
+
+[node name="Carved9Slides" type="Sprite2D" parent="."]
+position = Vector2(3506, 1423)
+texture = ExtResource("7_smn70")
+
+[node name="CarvedRegular" type="Sprite2D" parent="."]
+position = Vector2(3846, 1449)
+texture = ExtResource("8_jhkkj")
+
+[node name="Carved3Slides" type="Sprite2D" parent="."]
+position = Vector2(4008, 1461)
+texture = ExtResource("9_gs85w")
+
+[node name="BannerConnectionUp" type="Sprite2D" parent="."]
+position = Vector2(3819, 1238)
+texture = ExtResource("10_u2mf0")
+
+[node name="BannerConnectionRight" type="Sprite2D" parent="."]
+position = Vector2(3589, 1189)
+texture = ExtResource("11_xm2u7")
